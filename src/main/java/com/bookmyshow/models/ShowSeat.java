@@ -14,7 +14,7 @@ import java.util.Date;
 @Entity
 public class ShowSeat extends BaseModel {
     @ManyToOne
-    private MovieShow movieShow;
+    private Show show;
     @ManyToOne
     private Seat seat;
     @Enumerated(value = EnumType.ORDINAL)

@@ -9,8 +9,8 @@ import java.util.List;
 
 @Getter
 @Setter
-@Entity
-public class MovieShow extends BaseModel {
+@Entity(name = "Shows")
+public class Show extends BaseModel {
     @ManyToOne
     private Movie movie;
     private Date startTime;
